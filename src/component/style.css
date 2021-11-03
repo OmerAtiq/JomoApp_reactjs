@@ -1,0 +1,802 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600;700;800;900&display=swap');
+*{
+    padding: 0%;
+    margin: 0%;
+    font-family: 'Nunito', sans-serif;
+} 
+body{
+    overflow-x: hidden;
+}
+html{
+    font-size: 62.5%;
+}
+.prenav{
+    position: sticky;
+    top: 0%;
+    z-index: 2;
+    background-color: #f9f9f9;
+}
+.prenavRow{
+    height: 4.2vh;
+}
+.prenavMarquee{
+    font-size: 1.22rem;
+    line-height: 1.8rem;
+    font-weight: 600;
+    /* letter-spacing: 1px; */
+    color: #272727;
+}
+
+.navBarRow{
+    height: 9vh;
+    background-color: white;
+    position: relative;
+    top: -2px;
+}
+
+.navUl{
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    flex: 1 1;
+    padding: 0% 14rem;
+    box-sizing: border-box;
+    text-align: center;
+    text-align: center;
+    position: relative;
+}
+
+.navUl > li{
+    width: fit-content;
+    height: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.6rem;
+    margin-left: 2.5rem;
+    font-weight: 400;
+    color: #272727;
+    line-height: 2.4rem;
+}
+
+.navUl > li:hover{
+    cursor: pointer;
+}
+.resNav{
+    position: fixed;
+    z-index: 20;
+    top: 4%;
+    transition-duration: 0.5s;
+    left: -100%;
+    height: 100vh;
+    width: 75%;
+    overflow-y: scroll ;
+    background-color: #fff;
+}
+.resnavCol{
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center;
+}
+.loginbtn{
+    font-size: 1.5rem;
+    width: 40%;
+}
+.liImg{
+    background-size: 100% 100%;
+    font-size: 2.3rem;
+}
+.menuicdisplay{
+    visibility: hidden;
+}
+.resNavitems{
+    /* list-style: none; */
+}
+.resNavul{
+    list-style: none;
+}
+.icon_col{
+    padding: 0% 3rem;
+    box-sizing: border-box;
+}
+.icons{
+    cursor: pointer;
+    font-size: 2.2rem;
+}
+.slider{
+    position: relative;
+}
+.sliderBtns{
+    font-size: 1.2rem;
+    padding: 0% 3rem;
+    height: 6vh !important;
+    /* width: 15%; */
+    background-color: #fff;
+}
+.carousel-control-next,
+.carousel-control-prev{
+    height: 5.5vh;
+    margin-top: 20%;
+    width: 2.5%;
+    opacity: 10;
+    background-color: #f3f3f3;
+    
+}
+.carousel-control-prev{
+    margin-left: 1%;
+}
+.carousel-control-next{
+    margin-right: 1%;
+}
+.ic{
+    font-size: 1.7rem;
+    color:  #000 !important;
+
+}
+.img1{
+    transition-duration: 1s;
+    transform: scale(1);
+}
+.img1:hover{
+    transform: scale(1.1);
+    transition-duration: .5s;
+}
+.flow{
+    overflow: hidden;
+}
+.collectionRow{
+    padding: 0% 5rem;
+}
+.collectionsItems{
+    display: flex;
+    justify-content: flex-end
+}
+.collectionsBtn{
+    background-color: #fff;
+    color: #272727;
+    border: 0px solid black !important;
+    outline: none;
+    font-size: 1.5rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    padding: 0% 2rem;
+    height: 6vh !important;    
+}
+.collectionsBtnclick{
+    color: #bfd730 !important;
+    border-bottom: 2px  solid #bfd730 !important;
+}
+.imgRow{
+    padding: 0% 5rem;   
+    display: grid;
+    grid-template-columns: repeat(4,40% 30% 30%);
+
+}
+.women1{
+    overflow: hidden !important;
+    border: 3px solid #fff;
+    grid-row-start:1;
+    grid-column-start: 1;
+    grid-column-end: 1;
+}
+.women2{
+    border: 3px solid #fff;
+    overflow: hidden !important;
+    grid-row-start:2;
+    grid-column-start: 1;
+
+}
+.women2img{
+    margin-left: -3.2%;
+    overflow: hidden;
+
+}
+.women3{
+    border: 3px solid #fff;
+    overflow: hidden !important;
+    grid-row-start:1;
+    grid-row-end: 3;
+    grid-column-start: 2;
+    grid-column-end: 3;
+
+}
+.women3img{
+    margin-left: -2.5%;
+}
+.women4{
+    border: 1px solid #fff;
+    overflow: hidden !important;
+    grid-row-start:1;
+    grid-row-end: 3;
+    grid-column-start: 3;
+    grid-column-end: 4;
+} 
+.saleimg{
+    height: 90vh;
+    object-fit: cover !important;
+    overflow: hidden;
+}
+.ss{
+    background-attachment: scroll;
+}
+.TrendingBtn{
+    background-color: transparent;
+}
+.carousel_cont{
+    background-color: #f9f9f9;
+    
+}
+.bd{
+    margin-left: -1.5rem;
+
+}
+.slidercard_height{
+    height: 47vh !important;
+    cursor: pointer;
+}
+.slidercard_height:hover{
+    background-image: linear-gradient(rgba(249,249,249),rgba(249,249,249));
+}
+.carouselrow{
+    width: 95%;
+    margin-left: 2.5%;
+}
+.owl-theme .owl-dots{
+    display: none;
+}
+.owl-theme .owl-nav{
+    position: absolute;
+    top: 45%;
+    width: 105%;
+    margin-left: -2.5%;
+    display: flex;
+    justify-content: space-between;
+    /* background-color: turquoise; */
+}
+.owl-next{
+    font-weight: bolder !important;
+    font-size: 2.7rem !important;
+    height: 50px;
+    width: 30px;
+    background-color: white !important;
+}
+.owl-next:hover{
+    color: black !important;
+}
+.owl-prev{
+    font-weight: bolder !important;
+    font-size: 2.7rem !important;
+    height: 50px;
+    width: 30px;
+    background-color: white !important;
+}
+.owl-prev:hover{
+    color: black !important;
+}
+ .owl-carousel .owl-nav button.owl-next,
+ .owl-carousel .owl-nav button.owl-prev {
+    opacity: 10;
+    background-color: #f3f3f3;
+}
+.instaRow{
+    width: 95%;
+    margin-left: 2.5%;
+}
+.instaCol{
+    display: flex !important;
+    flex-direction: column !important;
+    justify-content: center !important;
+    align-items: center;
+}
+.instaPara{
+    line-height: 2.5rem;
+    font-size: 1.3rem;
+    /* font-weight: 700; */
+}
+.jomo{
+    font-size: 2rem;
+    font-weight: 800;
+}
+.sub{
+    background-color: #bfd730;
+    font-size: 1.2rem;
+    color: white;
+}
+.ul3{
+    list-style: none;
+}
+.li3{
+    font-size: 2.3vh !important;
+}
+.footerRow1{
+    width: 97%;
+    margin-left: 1.5%;
+}
+.footerHeading{
+    line-height: 2.5rem;
+}
+.footerHeading1{
+    font-size: 1.5rem;
+    color: #272727;
+}
+.footerHeading2{
+    font-size: 2.5rem;
+    color: #272727;
+    font-weight: 900;
+}
+.footerPara{
+    font-size: 1.3rem;
+    font-weight: 400;
+}
+.footerInp::placeholder{
+    font-size: 1.5rem;
+}
+.footerEnd{
+    color: #fff;
+}
+.imageSize{
+    margin-top: -10rem;
+}
+.parallaximg{ 
+    width: 100%;
+    height: 65rem;
+}
+.filter{
+    width: 20%;
+    margin-top: 10%;
+    margin-left: 5%;    
+}
+.filter1{
+    margin-top: 10%;
+    /* border: 1px solid #000; */
+}
+.filterTrans{
+    transition-duration: .5s !important ;
+    /* transform: scaleY(0); */
+    /* visibility: hidden; */
+    /* overflow: hidden; */
+}
+
+.filterfonts{
+    font-size: 1.1rem;
+    font-weight: 800;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: #000000;
+}
+
+.filterLine{
+    margin-top: 0;
+}
+.toggleIcon{
+    color: #b2C123;
+    font-weight: 1000 !important;
+}
+.formInp{
+    outline: 0;
+    /* border: 0px solid #000; */
+    color: #eeeeee;
+}
+
+
+.mcH1{
+    position: absolute;
+    color: white;
+    z-index: 5;
+    bottom: 0;
+    padding: 6vh;
+    width: 100%;
+    visibility: hidden;
+    background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7));
+    border: 1px solid #000;
+}
+.women1:hover .mcH1{
+    visibility: visible;
+}
+.cartbtn{
+    background-color: #b2C123;
+    color: white;
+    font-size: 1.5rem;
+    padding: 1.5rem 0%;
+    width: 100%;
+    visibility: hidden;
+}
+.slidercard:hover .cartbtn{
+    visibility: visible;
+}
+.newArrivalLi:hover .newArrivalUl{
+    visibility: visible;
+}
+
+.newArrivalUl{
+    width: 30rem;
+    height: auto;
+    padding: 0px 2rem;
+    padding-bottom: 2rem;
+    box-sizing: border-box;
+    border: 1px solid #BBBDBF;
+    position: absolute;
+    top: 90%;
+    left: 21.5%;
+    cursor: default;
+    background-color: white;
+    visibility: hidden;
+}
+
+.li1contentContainer{
+    width: auto;
+    height: auto;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    margin-top: 2rem;
+    cursor: pointer;
+}
+
+.li2contentContainer{
+    width: auto;
+    height: auto;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    cursor: pointer;
+    margin-top: 2rem;
+}
+
+.li3contentContainer{
+    width: auto;
+    height: auto;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    cursor: pointer;
+    margin-top: 2rem;
+}
+
+.li4contentContainer{
+    width: auto;
+    height: auto;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    cursor: pointer;
+    margin-top: 2rem;
+}
+
+.li1contentContainer:hover .liH1{
+    font-weight: 700;
+}
+
+.li2contentContainer:hover .liH1{
+    font-weight: 700;
+}
+
+.li3contentContainer:hover .liH1{
+    font-weight: 700;
+}
+
+.li4contentContainer:hover .liH1{
+    font-weight: 700;
+}
+
+.leftSide{
+    width: 80px;
+    height: 80px;
+    background-size: 100% 100%;
+    cursor: pointer;
+}
+
+.rightSide{
+    width: auto;
+    height: auto;
+    margin-left: 1.5rem;
+}
+
+.liH1{
+    font-size: 1.4rem;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.menLiText:hover .menUl{
+    visibility: visible;
+}
+
+.womenLiText:hover .womenUl{
+    visibility: visible;
+}
+
+.girlsLiText:hover .girlsUl{
+    visibility: visible;
+}
+
+.boysLiText:hover .boysUl{
+    visibility: visible;
+}
+.BrandsLiText:hover .BrandsUl{
+    visibility: visible !important;
+}
+
+
+.menUl,
+.womenUl,
+.girlsUl,
+.boysUl,
+.BrandsUl{
+    width: 157.5%;
+    height: auto;
+    padding: 0% 10rem;
+    padding-bottom: 2rem;
+    box-sizing: border-box;
+    position: absolute;
+    top: 95%;
+    left: -30%;
+    background-color: white;
+    cursor: default;
+    visibility: hidden;
+    border: 1px solid #BBBDBF;
+}
+.brandNames{
+    list-style: none;
+    color: #272727 !important;
+}
+.brandNames:hover{
+    font-weight: 700;
+}
+
+.menContentContainer,
+.womenContentContainer,
+.girlsContentContainer,
+.boysContentContainer,
+.brandsContentContainer{
+    width: 29.7rem;
+    height: auto;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    padding-left: 5rem;
+    box-sizing: border-box;
+    margin-top: 2rem;
+    cursor: pointer;
+    background-color: white;
+}
+
+.menRightSide,
+.womenRightSide,
+.girlsRightSide,
+.boysRightSide{
+    text-transform: uppercase;
+    margin-left: 2rem;
+}
+
+.grandSubulFootwear,
+.grandSubulApparel, 
+.grandSubulAccessories,
+.grandSubulBags{
+    width: 75%;
+    height: 100%;
+    padding: 5rem 0rem;
+    box-sizing: border-box;
+    position: absolute;
+    left: 39.6rem;
+    top: 0% ;
+    box-sizing: border-box;
+    border-left: 1px solid #BBBDBF;
+    display: grid;
+    grid-template-columns: repeat(4, 20%);
+    justify-content: center;
+    background-color: white;
+    visibility: hidden;
+    cursor: default;
+}
+
+.menContentContainer:hover .grandSubulFootwear{
+    visibility: visible;
+}
+
+.menContentContainer:hover .grandSubulApparel{
+    visibility: visible;
+}
+
+.menContentContainer:hover .grandSubulAccessories{
+    visibility: visible;
+}
+
+.menContentContainer:hover .grandSubulBags{
+    visibility: visible;
+}
+
+.womenContentContainer:hover .grandSubulFootwear{
+    visibility: visible;
+}
+
+.womenContentContainer:hover .grandSubulApparel{
+    visibility: visible;
+}
+
+.womenContentContainer:hover .grandSubulAccessories{
+    visibility: visible;
+}
+
+.womenContentContainer:hover .grandSubulBags{
+    visibility: visible;
+}
+
+.girlsContentContainer:hover .grandSubulFootwear{
+    visibility: visible;
+}
+
+.girlsContentContainer:hover .grandSubulApparel{
+    visibility: visible;
+}
+
+.girlsContentContainer:hover .grandSubulAccessories{
+    visibility: visible;
+}
+
+.girlsContentContainer:hover .grandSubulBags{
+    visibility: visible;
+}
+
+.boysContentContainer:hover .grandSubulFootwear{
+    visibility: visible;
+}
+
+.boysContentContainer:hover .grandSubulApparel{
+    visibility: visible;
+}
+
+.boysContentContainer:hover .grandSubulAccessories{
+    visibility: visible;
+}
+
+.boysContentContainer:hover .grandSubulBags{
+    visibility: visible;
+}
+
+.subTitleContentDiv{
+    width: auto;
+    margin-left: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-transform: capitalize;
+    cursor: pointer;
+}
+
+.subTitleContentDiv:hover .menLi{
+    font-weight: 700;
+}
+
+.menContentContainer:hover .defaultFontWeight{
+    font-weight: 700;
+}
+
+.womenContentContainer:hover .defaultFontWeight{
+    font-weight: 700 ;
+}
+
+.girlsContentContainer:hover .defaultFontWeight{
+    font-weight: 700 ;
+}
+
+.boysContentContainer:hover .defaultFontWeight{
+    font-weight: 700 ;
+}
+
+.menLi{
+    margin-top: 1rem;
+    font-weight: 500;
+}
+
+.iconContainer{
+    padding: 0% 4rem;
+    box-sizing: border-box;
+}
+
+
+.menuIcon{
+    font-size: 25px;
+    position: absolute;
+    left: 3%;
+    display: none;
+    cursor: pointer;
+}
+.brandcartbtn{
+
+    /* visibility: hidden; */
+}
+.brandcard:hover .brandcartbtn{
+    visibility: visible;
+}
+.brandcard:hover{
+    cursor: pointer;
+}
+.cartDiv{
+    position: fixed;
+    top: 0%;
+    right: -150%;
+    height: 100vh;
+    width: 24.52vw;
+    transition-duration: .5s;
+    background-color: white;
+}
+.closeIcon{
+    top: 0;
+    font-size: 2rem;
+    /* border: 1px solid #000; */
+}
+.closeBtn{
+    cursor: pointer;
+}
+.cartcounter{
+    position: absolute;
+    height: 14px;
+    top: 24%;
+    width: 14px;
+    left: 60%;
+
+    color: white;
+    text-align: center;
+    /* display: flex; */
+    /* justify-content: center; */
+    /* align-items: center; */
+    border-radius:100% ;
+    background-color: #b2C123;
+}
+.blankdiv{
+    position: relative;
+    height: 100% !important;
+    z-index: 1000;
+    width: 100% !important;
+    background-color: rgba(0,0,0,0.7) !important;
+}
+.cartheading{
+    font-weight: 600;
+}
+@media only screen and (max-width :992px){
+    html{
+        font-size: 50%;
+    }
+    .icdisplay{
+        display: none !important;
+    }
+    .menuicdisplay{
+        font-size: 3rem;
+        visibility: visible !important;
+        color: black !important;
+    }
+    .navBarRow{
+        padding-left: 0rem;
+        padding-right: 0rem;
+        justify-content: space-around;
+    }
+    .nav_items{
+        display: none;
+        padding: 0px 0rem;
+    }
+    .icon_col{
+        padding: 0% 2rem;
+    }
+    .icons{
+        cursor: pointer;
+        font-size: 2.2rem;
+    }
+    .collectionRow{
+        padding: 0% 0rem;
+    }
+    .collectionsBtn{
+        padding: 0% .5rem;
+    }
+    .collectionsItems{
+        /* display: flex; */
+        justify-content: center
+    }
+    .collectionHeading{
+        display: flex;
+        justify-content: center;
+    }
+}
